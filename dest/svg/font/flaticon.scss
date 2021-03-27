@@ -1,0 +1,77 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?0ffba83bff83e549f96c3083e824d5bd") format("truetype"),
+url("./flaticon.woff?0ffba83bff83e549f96c3083e824d5bd") format("woff"),
+url("./flaticon.woff2?0ffba83bff83e549f96c3083e824d5bd") format("woff2"),
+url("./flaticon.eot?0ffba83bff83e549f96c3083e824d5bd#iefix") format("embedded-opentype"),
+url("./flaticon.svg?0ffba83bff83e549f96c3083e824d5bd#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "carrito-de-compras": "\f101",
+    "eliminar-cruz": "\f102",
+    "facebook-app-symbol": "\f103",
+    "flecha-correcta": "\f104",
+    "flecha-izquierda": "\f105",
+    "instagram": "\f106",
+    "lock": "\f107",
+    "menu": "\f108",
+    "pinterest": "\f109",
+    "proximo": "\f10a",
+    "twitter": "\f10b",
+    "user": "\f10c",
+    "x-mark": "\f10d",
+);
+
+.flaticon-carrito-de-compras:before {
+    content: map-get($flaticon-map, "carrito-de-compras");
+}
+.flaticon-eliminar-cruz:before {
+    content: map-get($flaticon-map, "eliminar-cruz");
+}
+.flaticon-facebook-app-symbol:before {
+    content: map-get($flaticon-map, "facebook-app-symbol");
+}
+.flaticon-flecha-correcta:before {
+    content: map-get($flaticon-map, "flecha-correcta");
+}
+.flaticon-flecha-izquierda:before {
+    content: map-get($flaticon-map, "flecha-izquierda");
+}
+.flaticon-instagram:before {
+    content: map-get($flaticon-map, "instagram");
+}
+.flaticon-lock:before {
+    content: map-get($flaticon-map, "lock");
+}
+.flaticon-menu:before {
+    content: map-get($flaticon-map, "menu");
+}
+.flaticon-pinterest:before {
+    content: map-get($flaticon-map, "pinterest");
+}
+.flaticon-proximo:before {
+    content: map-get($flaticon-map, "proximo");
+}
+.flaticon-twitter:before {
+    content: map-get($flaticon-map, "twitter");
+}
+.flaticon-user:before {
+    content: map-get($flaticon-map, "user");
+}
+.flaticon-x-mark:before {
+    content: map-get($flaticon-map, "x-mark");
+}

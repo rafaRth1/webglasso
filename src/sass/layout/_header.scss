@@ -1,0 +1,280 @@
+/* body {
+   background-color: bisque;
+}
+
+.header-top {
+   height: 5rem;
+   background-color: $black;
+}
+
+.site_nav_header {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.ul_one {
+   padding-left: 0;
+   margin: 0;
+   li {
+      display: inline-block;
+      list-style: none;
+
+      a {
+         display: block;
+         text-decoration: none;
+         color: $black;
+         font-family: $fuente-principal;
+         padding: 2.8rem 1.5rem;
+         font-size: 1.4rem;
+         font-weight: $medium;
+      }
+   }
+}
+
+.ul_one {
+   .list-one-shopall {
+      .link-shopall {
+         // acaa nme quedo
+         margin: 0;
+
+         a {
+            &:nth-child(1) {
+               padding-left: 0;
+            }
+         }
+      }
+   }
+}
+
+//_______________________---
+
+.list-one-shopall {
+   &:hover {
+      .sub-menu-shopall {
+         ul {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+            pointer-events: auto;
+         }
+      }
+   }
+}
+
+.sub-menu-shopall {
+   background-color: $white;
+   position: absolute;
+   pointer-events: none;
+   overflow: hidden;
+
+   ul {
+      padding: 0;
+      opacity: 0;
+      transform: translate3d(0, 10rem, 0);
+      transition: all 0.5s ease-in-out;
+      max-width: 100%;
+      display: flex;
+      justify-content: space-between;
+   }
+}
+
+.block-primary {
+   display: flex;
+   .col-1,
+   .col-2,
+   .col-3,
+   .col-4 {
+      margin: 2rem;
+
+      &:nth-child(1) {
+         margin-left: 0;
+      }
+
+      a {
+         padding: 0.6rem;
+         font-size: 1.2rem;
+         font-weight: $regular;
+
+         &:nth-child(1) {
+            font-weight: $medium;
+         }
+      }
+   }
+}
+
+.content-primary-shopall {
+   display: block !important;
+   .block-primary {
+      .col-1 {
+         a {
+            text-transform: uppercase;
+            font-weight: $medium;
+         }
+      }
+   }
+}
+
+.content-secondary-shopall {
+   display: block !important;
+   .block-scd {
+      a {
+         display: block;
+         padding: 0 !important;
+         img {
+            width: auto;
+            vertical-align: middle;
+         }
+      }
+   }
+}
+
+.site__logo {
+   #logo {
+      img {
+         width: 80% !important;
+      }
+   }
+}
+
+.ul_two {
+   padding-left: 0;
+   margin: 0;
+
+   li {
+      display: inline-block;
+      list-style: none;
+      margin-left: 2rem;
+
+      a {
+         display: block;
+         text-decoration: none;
+         color: $black;
+         font-family: $fuente-principal;
+         padding: 2.8rem 0;
+         font-size: 1.4rem;
+         font-weight: $medium;
+      }
+   }
+} */
+
+// Css para el menu desplegable
+
+body {
+   background-color: blanchedalmond;
+}
+
+.header__top {
+   background-color: $black;
+   height: 4.5rem;
+}
+
+.nav-leading {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.ul-leading {
+   display: flex;
+   padding-left: 0;
+   margin: 0;
+   li {
+      list-style: none;
+      margin-left: 1.6rem;
+
+      &:nth-child(1) {
+         margin-left: 0;
+      }
+      a {
+         padding: 2.6rem 0rem;
+         display: block;
+         text-decoration: none;
+         color: $black;
+         font-family: $fuente-principal;
+         font-size: 1.5rem;
+         font-weight: $medium;
+         position: relative;
+      }
+   }
+}
+
+.ticket {
+   font-size: 1rem;
+   font-family: $fuente-principal;
+   text-align: center;
+   color: $white;
+   display: inline;
+   padding: 0 0.4rem;
+   margin: 0;
+   position: absolute;
+}
+
+.ticket-one {
+   background-color: $light_blue;
+   top: 0.7rem;
+   right: 0;
+}
+.ticket-two {
+   background-color: $red;
+   top: 0.7rem;
+   right: 0;
+}
+.ticket-three {
+   background-color: $yellow;
+   top: 0.7rem;
+   right: 0;
+}
+
+// Carousel
+
+.carousel__contenedor {
+   position: relative;
+
+   &:hover {
+      .carousel__anterior,
+      .carousel__siguiente {
+         opacity: 1;
+         i {
+            opacity: 1;
+         }
+      }
+   }
+}
+
+.carousel__anterior,
+.carousel__siguiente {
+   display: block;
+   width: 50px;
+   height: 50px;
+   border-radius: 5rem;
+   border-color: $lead;
+   border-style: solid;
+   opacity: 0;
+   padding: 1rem;
+   cursor: pointer;
+   line-height: 30px;
+   text-align: center;
+   color: $white;
+   background: none;
+   position: absolute;
+   top: calc(50% - 35px);
+   z-index: 5;
+   padding: 0;
+
+   i {
+      color: $lead;
+      opacity: 0;
+   }
+}
+
+.carousel__anterior {
+   left: 30px;
+}
+
+.carousel__siguiente {
+   right: 30px;
+}
+
+.carousel__lista {
+   overflow: hidden;
+}

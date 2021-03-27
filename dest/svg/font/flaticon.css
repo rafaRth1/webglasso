@@ -1,0 +1,59 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("./flaticon.ttf?0ffba83bff83e549f96c3083e824d5bd") format("truetype"),
+url("./flaticon.woff?0ffba83bff83e549f96c3083e824d5bd") format("woff"),
+url("./flaticon.woff2?0ffba83bff83e549f96c3083e824d5bd") format("woff2"),
+url("./flaticon.eot?0ffba83bff83e549f96c3083e824d5bd#iefix") format("embedded-opentype"),
+url("./flaticon.svg?0ffba83bff83e549f96c3083e824d5bd#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-carrito-de-compras:before {
+    content: "\f101";
+}
+.flaticon-eliminar-cruz:before {
+    content: "\f102";
+}
+.flaticon-facebook-app-symbol:before {
+    content: "\f103";
+}
+.flaticon-flecha-correcta:before {
+    content: "\f104";
+}
+.flaticon-flecha-izquierda:before {
+    content: "\f105";
+}
+.flaticon-instagram:before {
+    content: "\f106";
+}
+.flaticon-lock:before {
+    content: "\f107";
+}
+.flaticon-menu:before {
+    content: "\f108";
+}
+.flaticon-pinterest:before {
+    content: "\f109";
+}
+.flaticon-proximo:before {
+    content: "\f10a";
+}
+.flaticon-twitter:before {
+    content: "\f10b";
+}
+.flaticon-user:before {
+    content: "\f10c";
+}
+.flaticon-x-mark:before {
+    content: "\f10d";
+}

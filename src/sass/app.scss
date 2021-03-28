@@ -1,8 +1,9 @@
-@import 'base/normalize';
-@import 'base/variables';
-@import 'base/mixin';
-@import 'base/globales';
-@import 'base/utilidades';
+@import "base/normalize";
+@import "base/variables";
+@import "base/mixin";
+@import "base/globales";
+@import "base/utilidades";
 
 // UI
-@import 'layout/header';
+@import "layout/header";
+@import "layout/carousel";

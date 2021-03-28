@@ -1,0 +1,106 @@
+// Carousel
+
+.carousel {
+   position: relative;
+}
+
+.carousel__contenedor {
+   position: relative;
+
+   &:hover {
+      .carousel__anterior,
+      .carousel__siguiente {
+         opacity: 1;
+         i {
+            opacity: 1;
+         }
+      }
+   }
+}
+
+.carousel__anterior,
+.carousel__siguiente {
+   display: block;
+   width: 50px;
+   height: 50px;
+   border-radius: 5rem;
+   border-color: $lead;
+   border-style: solid;
+   opacity: 0;
+   padding: 1rem;
+   cursor: pointer;
+   line-height: 30px;
+   text-align: center;
+   color: $white;
+   background: none;
+   position: absolute;
+   top: 40%;
+   z-index: 5;
+   padding: 0;
+
+   i {
+      color: $lead;
+      opacity: 0;
+   }
+}
+
+.carousel__anterior {
+   left: 30px;
+}
+
+.carousel__siguiente {
+   right: 30px;
+}
+
+.carousel__lista {
+   overflow: hidden;
+}
+
+.carousel__indicadores {
+   position: absolute;
+   bottom: 3rem;
+   right: 0;
+   left: 0;
+}
+
+.carousel__elemento {
+   position: relative;
+}
+
+.content-info-carousel {
+   position: absolute;
+   top: 25%;
+   text-align: center;
+   width: 45rem;
+
+   h2 {
+      color: $white;
+      font-family: $fuente_principal;
+      margin: 0;
+   }
+
+   h3 {
+      color: $white;
+      font-family: $fuente_principal;
+      margin: 0;
+   }
+
+   p {
+      color: $white;
+      font-family: $fuente_principal;
+      margin: 0 2rem 3rem 0;
+      font-size: 1.2rem;
+   }
+
+   .slide-btn {
+      background-color: $white;
+      color: $black;
+      display: inline-block !important;
+   }
+}
+
+.btn {
+   text-decoration: none;
+   font-family: $fuente_principal;
+   padding: 1rem 5rem;
+}

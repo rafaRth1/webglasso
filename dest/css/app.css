@@ -373,7 +373,7 @@ h2 {
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 
 h4 {
@@ -608,6 +608,10 @@ body {
   right: 0;
 }
 
+.carousel {
+  position: relative;
+}
+
 .carousel__contenedor {
   position: relative;
 }
@@ -638,7 +642,7 @@ body {
   color: #ffffff;
   background: none;
   position: absolute;
-  top: calc(50% - 35px);
+  top: 40%;
   z-index: 5;
   padding: 0;
 }
@@ -659,4 +663,53 @@ body {
 
 .carousel__lista {
   overflow: hidden;
+}
+
+.carousel__indicadores {
+  position: absolute;
+  bottom: 3rem;
+  right: 0;
+  left: 0;
+}
+
+.carousel__elemento {
+  position: relative;
+}
+
+.content-info-carousel {
+  position: absolute;
+  top: 25%;
+  text-align: center;
+  width: 45rem;
+}
+
+.content-info-carousel h2 {
+  color: #ffffff;
+  font-family: "Heebo", sans-serif;
+  margin: 0;
+}
+
+.content-info-carousel h3 {
+  color: #ffffff;
+  font-family: "Heebo", sans-serif;
+  margin: 0;
+}
+
+.content-info-carousel p {
+  color: #ffffff;
+  font-family: "Heebo", sans-serif;
+  margin: 0 2rem 3rem 0;
+  font-size: 1.2rem;
+}
+
+.content-info-carousel .slide-btn {
+  background-color: #ffffff;
+  color: #000000;
+  display: inline-block !important;
+}
+
+.btn {
+  text-decoration: none;
+  font-family: "Heebo", sans-serif;
+  padding: 1rem 5rem;
 }
